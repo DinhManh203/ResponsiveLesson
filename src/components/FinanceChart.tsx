@@ -88,8 +88,8 @@ const FinanceChart = () => {
                     }}
                 >
                     <CartesianGrid strokeDasharray="3 3" stroke='#ddd' />
-                    <XAxis dataKey="name" tick={{ fill: "#d1d5db" }} tickLine={false} tickMargin={10} />
-                    <YAxis dataKey="name" tick={{ fill: "#d1d5db" }} tickLine={false} />
+                    <XAxis dataKey="income" tick={{ fill: "#d1d5db" }} tickLine={false} tickMargin={10} />
+                    <YAxis dataKey="expense" tick={{ fill: "#d1d5db" }} tickLine={false} />
                     <Tooltip />
                     <Legend align='center' verticalAlign='top'
                         wrapperStyle={{
@@ -97,8 +97,8 @@ const FinanceChart = () => {
                             paddingBottom: "30px"
                         }}
                     />
-                    <Line type="monotone" dataKey="income" stroke="#8884d8" strokeWidth={10} />
-                    <Line type="monotone" dataKey="expense" stroke="#82ca9d" />
+                    <Line type="monotone" dataKey="income" stroke="#8884d8" strokeWidth={2} />
+                    <Line type="monotone" dataKey="expense" stroke="#82ca9d" strokeWidth={2} />
                 </LineChart>
             </ResponsiveContainer>
         </div>
